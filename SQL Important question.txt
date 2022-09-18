@@ -1,0 +1,43 @@
+Find the second largest  salary of employee;
+
+select max(salary) as SecondHighestSalary from Employee where salary<(Select max(salary) from  Employee);
+
+
+Delete the repeating email and keep the email which has lower id value.
+
+delete p from person p, person q where p.id>q.id and p.email=q.email;
+
+
+
+Exchange the gender name;
+update Salary Set sex=if(sex='m','f','m');
+
+
+
+ 
+
+Write an SQL query to calculate the bonus of each employee. The bonus of an employee is 100% of their salary if the ID of the employee is an odd number and the employee name does not start with the character 'M'. The bonus of an employee is 0 otherwise.
+
+select employee_id, if(employee_id%2=1 and name not like 'M%',salary,0) as bonus from Employees;
+
+ 
+
+
+
+What is Kernal? (V. Imp)
+What is a process in OS and What are the different states of a process?
+What do you mean by FCFS Algorithm and best advantages of it?
+What is a Scheduling Algorithm? Name different types of scheduling algorithms.
+What is virtual memory?
+What is thread in OS?
+What is the difference between paging and segmentation?
+What is Cache ? (Use a Example)
+What is thrashing in OS?
+When is multi threading not useful?
+What is TLB?
+DIfference between Paging and Segmentation?
+What is Paging?
+What is Virtual Memory?
+What is Page fault?
+What is Cache?
+
